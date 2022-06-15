@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111111;
+    background-color: #fff;
+    line-height: 1.375;
+}
+
+/* Utility Classes */
+.bg-darkblue { background-color: #100e79;}
+.bg-lightblue { background-color: #4c8fe6;}
+.bg-verylightblue { background-color: #e2e2eb;}
+.bg-green { background-color: #009607;}
+.border-darkblue { border-color: #100e79;}
+.text-darkblue { color: #100e79;}
+.text-lightblue { color: #4c8fe6;}
+.text-green { color: #009607;}
+.ff-serif { font-family: 'Source Serif Pro', serif;}
+.fs-90 { font-size: 0.9rem;}
+.fs-80 { font-size: 0.8rem;}
+.fw-500 { font-weight: 500;}
+.semi-bold { font-weight: 600;}
+.opacity-8 { opacity: 0.8;}
+.opacity-9 { opacity: 0.9;}
+.letter-spacing-1 { letter-spacing: 0.5px;}
+.letter-spacing-3 { letter-spacing: 1px;}
+.letter-spacing-5 { letter-spacing: 2.5px;}
+
+
+/* Components */
+
+#back-to-top {
+    display: inline-block;
+    background-color: #222428;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+  
+#back-to-top i {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 40px;
+    color: #f2f2f2;
+}
+  
+#back-to-top:hover {
+    cursor: pointer;
+    background-color: #009607;
+}
+  
+#back-to-top:active {
+    background-color: #009607;
+}
+  
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Header Styling Begins */
+
+.mobile-hamburger-icon img {
+    width: clamp(12px, 1.5vw, 1.5rem);
+}
+
+.mobile-menu-icon {
+    width: 2rem;
+}
+
+.offcanvas {
+    max-width: 250px;
+}
+
+.sidenav-logo img {
+    width: 10rem;
+}
+
+.offcanvas-body > ul > li > a {
+    width: 100%;
+    text-align: start;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #100e79;
+}
+
+.offcanvas-body ul li.active, .offcanvas-body ul li:hover {
+    background: #100e79;
+}
+
+.offcanvas-body ul li.active p, .offcanvas-body ul li:hover p {
+    color: white;
+}
+
+.offcanvas-body ul li.active a .mobile-nav-menu-icon, 
+.offcanvas-body ul li:hover a .mobile-nav-menu-icon {
+    background: white;
+}
+
+.offcanvas-body > ul > li.active > a > .sidenav-wrap > .mobile-nav-menu-icon > .sidenav-icons,
+.offcanvas-body > ul > li:hover > a > .sidenav-wrap > .mobile-nav-menu-icon > .sidenav-icons {
+    color: #100e79;
+}
+
+.mobile-nav-menu-icon {
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(#100e79, #9797ac);
+}
+
+.offcanvas-body > ul > li > a > .sidenav-wrap > .mobile-nav-menu-icon > .sidenav-icons {
+    width: 1rem;
+    color: #ffffff;
+}
+
+.navbar-brand img {
+    width: 12rem;
+}
+
+.nav-right {
+    font-size: clamp(8px, 1.5vw, 1rem);
+    line-height: 1.5;
+}
+
+.nav-link.active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #100e79;
+    display: block;
+    margin: auto;
+}
+.nav-link::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #100e79;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+
+
+/* Main Styling Begins */
+
+main {
+    overflow-x: hidden;
+}
+
+.side-navigation-wrap {
+    box-shadow: 0 10px 20px rgba(36, 0, 70, 0.05);
+}
+
+.side-navigation-wrap > ul > li > a {
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #100e79;
+}
+
+.side-navigation-wrap ul li.active, .side-navigation-wrap ul li:hover {
+    background: #100e79;
+}
+
+.side-navigation-wrap ul li.active p, .side-navigation-wrap ul li:hover p {
+    color: white;
+}
+
+.side-navigation-wrap ul li.active a .side-navigation-menu-icon, 
+.side-navigation-wrap ul li:hover a .side-navigation-menu-icon {
+    background: white;
+}
+
+.side-navigation-wrap > ul > li.active > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons,
+.side-navigation-wrap > ul > li:hover > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons {
+    color: #100e79;
+}
+
+.side-navigation-menu-icon {
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(#100e79, #9797ac);
+}
+
+.side-navigation-wrap > ul > li > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons {
+    width: 1.5rem;
+    color: #ffffff;
+}
+
+
+.card-wrap {
+    overflow: hidden;
+}
+
+.postId {
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+}
+
+/* Footer Styling */
+footer {
+    background: #100e79;
+}
+
+.footer-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+footer form .footer-form-wrap{
+    width: 100%;
+}
+
+footer form input {
+    width: 87.5%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+
+footer form button {
+    width: 12.5%;
+    outline: none;
+    border: none;
+    background: #009607;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
