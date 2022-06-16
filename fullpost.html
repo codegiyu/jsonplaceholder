@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Post Details | Giyu's API Blog</title>
+    <title></title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -16,6 +16,126 @@
 </head>
 <body>
     <a id="back-to-top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+
+    <header class="bg-white shadow-sm">
+        <div class="container-fluid py-0 px-lg-5 px-md-3 px-2">
+            <div class="navbar d-flex align-items-center justify-content-between p-0">
+                <div class="nav-left d-flex align-items-center">
+                    
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="side-nav" aria-labelledby="side-nav-label">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="side-nav-label"></h5>
+                            <a href="index.html" class="sidenav-brand">
+                                <div class="sidenav-logo">
+                                    <img src="img/nav-logo.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body w-100">
+                            <ul class="w-100 list-unstyled">
+                                <li class="d-flex">
+                                    <a href="index.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="eva:home-fill" data-width="25" data-height="25"></span>
+                                            </div>
+                                            <p class="m-0">Home</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="index.html/#create-post" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="jam:write-f" data-width="25" data-height="25"></span>
+                                            </div>
+                                            <p class="m-0">Create Post</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="navbar-brand">
+                        <div class="nav-logo">
+                            <img src="img/nav-logo.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-right d-lg-flex align-items-center d-none">
+                    <ul class="navbar-nav d-flex flex-row mx-3">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link fs-90 fw-bold text-dark letter-spacing-3 text-uppercase py-2 px-1 d-inline-block" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link fs-90 fw-bold text-dark letter-spacing-3 text-uppercase py-2 px-1 d-inline-block" href="ranking.html">Ranking</a>
+                        </li>
+                    </ul>
+                    <a href="create-post.html" class="btn btn-primary bg-darkblue border-darkblue text-white letter-spacing-5 text-uppercase fs-80 py-2 px-4">Create Post</a>
+                </div>
+                <a class="mobile-hamburger-icon d-block d-lg-none" data-bs-toggle="offcanvas" href="#side-nav" role="button" aria-controls="side-nav">
+                    <span class="iconify" data-icon="ci:menu-alt-02" data-width="50" data-height="50" style="color: #010036;"></span> 
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="side-navigation col-lg-3 d-lg-block d-none pe-xl-5 pe-0">
+                <div class="side-navigation-wrap py-5">
+                    <ul class="w-100 list-unstyled mb-5">
+                        <li class="d-flex my-3">
+                            <a href="index.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="eva:home-fill" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Home</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-flex my-3">
+                            <a href="create-post.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="jam:write-f" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Create Post</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content col-lg-9 col-12 px-5 ps-xl-0 pe-lg-5 py-4">
+                <form action="" class="search-form bg-verylightblue rounded p-5">
+                    <div class="d-flex">
+                        <input type="text" class="form-control me-4 px-4" placeholder="Enter search details...">
+                        <button type="submit" class="btn btn-success bg-green px-3">Search</button>
+                    </div>
+                </form>
+                <div class="row bg-verylightblue rounded px-5 py-3 my-3 mx-0">
+                    <a href="index.html" class="d-flex py-2 text-decoration-none">
+                        <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                            <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center text-white">
+                                <span class="iconify side-navigation-icons" data-icon="eva:home-fill" data-width="20" data-height="20"></span>
+                            </div>
+                            <p class="m-0 text-dark fs-6 fw-bold">Back to Home</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="postcards py-4 px-0">
+                    <div id="full-post" class="row p-0">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="container-fluid py-5">
         <div class="container py-5">
@@ -74,19 +194,20 @@
                     <form action="" method="post">
                         <div class="footer-form-wrap d-flex">
                             <input type="email" name="email" id="" class="py-2 ps-4 pe-3 footer-text" placeholder="Email address">
-                            <button type="submit" class="p-1"><i class="bi bi-arrow-right-short footer-header" aria-hidden="true"></i></button>
+                            <button type="submit" class="pt-1"><i class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+    <script src="js/fullpost.js"></script>
 
     <script>
         AOS.init();
