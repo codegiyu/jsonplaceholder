@@ -39,7 +39,7 @@ function displayCards() {
                                 <p class="postBody text-secondary fs-6 my-2">${postsArray[x].body.slice(0, 40)}...</p>
                                 <div class="d-flex justify-content-between mt-5">
                                     <a href="fullpost.html?id=${postsArray[x].id}" class="text-decoration-none m-0 p-0"><button class="btn bg-lightblue fs-6 px-2 lh-1 py-2 text-white">View</button></a>
-                                    <button class="btn bg-green fs-6 px-2 lh-1 py-0 text-white">Update</button>
+                                    <a href="update-post.html?id=${postsArray[x].id}" class="text-decoration-none m-0 p-0"><button class="btn bg-green fs-6 px-2 lh-1 py-2 text-white">Update</button></a>
                                     <button class="btn text-danger fs-6 p-0"><span class="iconify" data-icon="ion:trash" style="color: red;" data-width="30" data-height="30"></span></button>
                                 </div>
                             </div>

@@ -21,7 +21,13 @@ async function getData() {
     if (posts) {
         console.log("Fetch Full Post OK");
     }
+    setPageTitle();
+    console.log("Page title successfully changed");
     showFullPost();
+}
+
+function setPageTitle() {
+    document.title = `${fullPost[0].title.slice(0, 15)} | Giyu's API Blog`;
 }
 
 function showFullPost() {
