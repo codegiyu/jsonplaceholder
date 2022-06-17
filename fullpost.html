@@ -18,7 +18,7 @@
     <a id="back-to-top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
     <header class="bg-white shadow-sm">
-        <div class="container-fluid py-0 px-lg-5 px-md-3 px-2">
+        <div class="container-fluid py-2 px-lg-4 px-md-3 px-2">
             <div class="navbar d-flex align-items-center justify-content-between p-0">
                 <div class="nav-left d-flex align-items-center">
                     
@@ -45,7 +45,7 @@
                                     </a>
                                 </li>
                                 <li class="d-flex">
-                                    <a href="index.html/#create-post" class="d-flex ps-5 py-2 text-decoration-none">
+                                    <a href="index.html#create-post" class="d-flex ps-5 py-2 text-decoration-none">
                                         <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
                                             <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
                                                 <span class="iconify sidenav-icons" data-icon="jam:write-f" data-width="25" data-height="25"></span>
@@ -64,7 +64,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="nav-right d-lg-flex align-items-center d-none">
+                <div class="nav-right d-lg-flex align-items-center d-none pe-lg-3">
                     <ul class="navbar-nav d-flex flex-row mx-3">
                         <li class="nav-item mx-3">
                             <a class="nav-link fs-90 fw-bold text-dark letter-spacing-3 text-uppercase py-2 px-1 d-inline-block" href="index.html">Home</a>
@@ -73,9 +73,9 @@
                             <a class="nav-link fs-90 fw-bold text-dark letter-spacing-3 text-uppercase py-2 px-1 d-inline-block" href="ranking.html">Ranking</a>
                         </li>
                     </ul>
-                    <a href="create-post.html" class="btn btn-primary bg-darkblue border-darkblue text-white letter-spacing-5 text-uppercase fs-80 py-2 px-4">Create Post</a>
+                    <a href="index.html#create-post" class="btn btn-primary bg-darkblue border-darkblue text-white letter-spacing-5 text-uppercase fs-80 py-3 px-4">Create Post</a>
                 </div>
-                <a class="mobile-hamburger-icon d-block d-lg-none" data-bs-toggle="offcanvas" href="#side-nav" role="button" aria-controls="side-nav">
+                <a class="mobile-hamburger-icon d-block d-lg-none me-3" data-bs-toggle="offcanvas" href="#side-nav" role="button" aria-controls="side-nav">
                     <span class="iconify" data-icon="ci:menu-alt-02" data-width="50" data-height="50" style="color: #010036;"></span> 
                 </a>
             </div>
@@ -98,7 +98,7 @@
                             </a>
                         </li>
                         <li class="d-flex my-3">
-                            <a href="create-post.html" class="d-flex ps-5 py-2 text-decoration-none">
+                            <a href="index.html#create-post" class="d-flex ps-5 py-2 text-decoration-none">
                                 <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
                                     <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
                                         <span class="iconify side-navigation-icons" data-icon="jam:write-f" data-width="20" data-height="20"></span>
@@ -111,14 +111,14 @@
                 </div>
             </div>
 
-            <div class="main-content col-lg-9 col-12 px-5 ps-xl-0 pe-lg-5 py-4">
-                <form action="" class="search-form bg-verylightblue rounded p-5">
+            <div class="main-content col-lg-9 col-12 px-2 px-md-4 px-lg-5 ps-xl-0 pe-lg-5 py-4">
+                <form action="" class="search-form bg-verylightblue rounded py-5 px-2 px-md-5">
                     <div class="d-flex">
-                        <input type="text" class="form-control me-4 px-4" placeholder="Enter search details...">
+                        <input type="text" class="form-control me-4 px-2 px-md-4" placeholder="Enter search details...">
                         <button type="submit" class="btn btn-success bg-green px-3">Search</button>
                     </div>
                 </form>
-                <div class="row bg-verylightblue rounded px-5 py-3 my-3 mx-0">
+                <div class="row bg-verylightblue rounded px-2 px-md-5 py-3 my-3 mx-0">
                     <a href="index.html" class="d-flex py-2 text-decoration-none">
                         <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
                             <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center text-white">
@@ -128,8 +128,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="postcards py-4 px-0">
-                    <div id="full-post" class="row p-0">
+                <div class="postcards py-4 px-0 mx-0">
+                    <div id="full-post" class="row p-0 mx-0">
+                        
+                    </div>
+                </div>
+                <div class="comments bg-verylightblue py-5 px-0 mx-0">
+                    <h3 class="fw-bold text-center text-uppercase mb-5">Comments</h3>
+                    <div id="comments-box" class="row px-2 px-md-4 px-lg-5 mx-0">
                         
                     </div>
                 </div>
@@ -206,8 +212,8 @@
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-    <script src="js/fullpost.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/fullpost.js"></script>
 
     <script>
         AOS.init();
