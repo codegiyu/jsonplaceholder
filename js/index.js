@@ -91,7 +91,7 @@ function updatePost(id) {
         body: JSON.stringify({
             id: id,
             title: updatetitle[id-1].value,
-            body: updatebody[id-1].innerHTML,
+            body: updatebody[id-1].value,
             userId: 1,
         }),
         headers: {
@@ -102,9 +102,19 @@ function updatePost(id) {
         .then((data) => {
 
             console.log(data)
+            let postTags = document.querySelectorAll('.postTag')
             let postTitles = document.querySelectorAll('.postTitle')
             let postBodies = document.querySelectorAll('.postBody')
             // console.log(postTitles)
+            postTags.forEach((postTag, index) => {
+                if (index + 1 === id) {
+                    if (data.title !== "") {
+                        postTag.innerHTML = data.title.split(' ')[0]
+                    }
+                }
+
+            })
+
             postTitles.forEach((postTitle, index) => {
                 if (index + 1 === id) {
                     if (data.title !== "") {
